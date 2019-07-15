@@ -1,11 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
+import Navbar from "./components/layout/Navbar";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello from the other world.</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <nav className="nav bg-primary">
+        <Navbar />
+      </nav>
+    );
+  }
 }
 
 export default App;
